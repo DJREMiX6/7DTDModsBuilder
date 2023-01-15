@@ -1,0 +1,14 @@
+{
+  "GameModsPath": "D:\\Games\\Steam\\steamapps\\common\\7 Days To Die\\Mods",
+  "ModFolderName": "ModletExample",
+  "ExcludedDirectories": [
+    "dirToExclude",
+    "dir1\\dirToExclude"
+  ],
+  "ExcludedFiles": [
+    "fileToExclude.xml",
+    "dir1\\fileToExclude.xml",
+    "dir1\\dir11\\fileToExclude.xml",
+    "dir1\\dir11\\fileToExclude1.xml"
+  ]
+}
