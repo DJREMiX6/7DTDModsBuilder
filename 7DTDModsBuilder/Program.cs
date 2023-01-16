@@ -5,7 +5,9 @@ using Microsoft.Extensions.Hosting;
 
 var builder = Host.CreateApplicationBuilder(args);
 
-builder.Configuration.AddJsonFile("appsettings.json");
+var appLocation = Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location);
+
+builder.Configuration.AddJsonFile(Path.Combine(appLocation!, "appsettings.json"));
 
 builder.Services.AddSingleton<IConfigurationOptionsLoader, ConfigurationOptionsLoader>();
 builder.Services.AddSingleton<IModBuilder, ModBuilder>();
