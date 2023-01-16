@@ -34,7 +34,8 @@ Copy the content of the "net7.0-windows10.0.17763.0" into a new folder (call it 
 
 ## Execute the windows.install.bat file
 Execute the "windows.install.bat" file from a terminal, this will add the path of the "7dtd-build.bat" file to the PATH environment variables, this will make te command executable from a terminal opened in any directory.
-![image](https://user-images.githubusercontent.com/35576682/212575946-e076bc86-253b-42fa-90a1-53056debee07.png)
+
+    windows.install.bat
 
 # How it works
 In a folder where you are developing a 7 Days To Die mod, add a "build.json" file with a structure like that:
